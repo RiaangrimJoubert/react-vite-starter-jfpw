@@ -12,7 +12,7 @@ export default function App() {
           <img
             src="/tabbytech-logo.png"
             alt="TabbyTech"
-            style={{ width: 200 }}
+            style={{ width: 260 }}
           />
           <div style={{ marginTop: 18, fontSize: 36, fontWeight: 900 }}>
             WELCOME TO TABBYTECH
@@ -39,7 +39,21 @@ export default function App() {
 
             <button className="btn" style={{ marginTop: 10 }}>
               LOG IN
-            </button>
+           <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
+  <button
+    className="btn"
+    style={{
+      width: 220,
+      height: 46,
+      fontSize: 14,
+      letterSpacing: 1,
+      textTransform: "uppercase",
+    }}
+  >
+    Log In
+  </button>
+</div>
+
 
             {/* Forgot password at bottom */}
             <div style={{ textAlign: "center", marginTop: 14 }}>
