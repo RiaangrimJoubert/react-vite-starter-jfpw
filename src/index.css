@@ -42,4 +42,28 @@ body{
     0 0 0 1px rgba(139,92,246,0.10) inset,
     0 0 46px rgba(139,92,246,0.22);
 }
+.input{
+  width:100%;
+  padding:16px 18px;
+  height:54px;
+  background:#FFFFFF;
+  border: none;
+  border-radius: 14px;
+  color:#111;
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size:15px;
+  font-weight:600;
+  outline: none;
+  transition: box-shadow .12s ease, transform .08s ease;
+}
+
+.input::placeholder{
+  color:#8A8A8A;
+  font-weight:500;
+}
+
+.input:focus{
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 3px rgba(139,92,246,0.35);
+}
 
