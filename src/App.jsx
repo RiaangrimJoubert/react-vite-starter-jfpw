@@ -6,20 +6,22 @@ export default function App() {
 
   return (
     <div style={{ minHeight: "100vh", display: "grid", placeItems: "center", padding: 24 }}>
-      <div style={{ width: "min(520px, 92vw)" }}>
-        <div style={{ textAlign: "center", marginBottom: 18 }}>
+      <div style={{ width: "min(640px, 96vw)" }}>
+        {/* Logo */}
+        <div style={{ textAlign: "center", marginBottom: 24 }}>
           <img
             src="/tabbytech-logo.png"
             alt="TabbyTech"
-            style={{ width: 220, height: "auto" }}
+            style={{ width: 200 }}
           />
-          <div style={{ marginTop: 18, fontSize: 34, fontWeight: 900 }}>
+          <div style={{ marginTop: 18, fontSize: 36, fontWeight: 900 }}>
             WELCOME TO TABBYTECH
           </div>
         </div>
 
-        <div className="glowFrame card" style={{ padding: 22 }}>
-          <div style={{ display: "grid", gap: 12 }}>
+        {/* Login Card */}
+        <div className="glowFrame card" style={{ padding: 28 }}>
+          <div style={{ display: "grid", gap: 16 }}>
             <input
               className="input"
               value={email}
@@ -35,16 +37,28 @@ export default function App() {
               placeholder="Password"
             />
 
-            <a style={{ textAlign: "center", color: "var(--primary)", fontSize: 13 }}>
-              Forgot Password?
-            </a>
+            <button className="btn" style={{ marginTop: 10 }}>
+              LOG IN
+            </button>
 
-            <button className="btn">LOG IN</button>
-            <button className="btn secondary">Sign Up</button>
+            {/* Forgot password at bottom */}
+            <div style={{ textAlign: "center", marginTop: 14 }}>
+              <a
+                href="#"
+                style={{
+                  color: "var(--primary)",
+                  fontSize: 13,
+                  fontWeight: 600
+                }}
+              >
+                Forgot Password?
+              </a>
+            </div>
           </div>
         </div>
 
-        <div style={{ textAlign: "center", marginTop: 14, color: "var(--muted)", fontSize: 12 }}>
+        {/* Footer */}
+        <div style={{ textAlign: "center", marginTop: 16, color: "var(--muted)", fontSize: 12 }}>
           TabbyTech Debit Orders
         </div>
       </div>
